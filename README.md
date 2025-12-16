@@ -82,3 +82,5 @@ See LICENSE file for details.
 
 ### TODOs:
 - Use [Univer](https://docs.univer.ai/guides/sheets) instead of FortuneSheet 
+- Reduce the size of the build file
+- Measure performance
