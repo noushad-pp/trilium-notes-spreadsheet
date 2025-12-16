@@ -80,8 +80,9 @@ This will start a local development server at `http://localhost:5173` (or simila
 
 See LICENSE file for details.
 
-### TODOs
+## TODOs
 
+- add typescript support
 - Use [Univer](https://docs.univer.ai/guides/sheets) instead of FortuneSheet 
 - Reduce the size of the build file
 - Measure performance
