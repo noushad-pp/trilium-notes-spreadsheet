@@ -1,0 +1,42 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.fortune-sheet-mount {
+  width: 100%;
+  height: 100%;
+}
+
+/* Ensure fortune sheet doesn't overflow or collapse unexpectedly */
+.fortune-sheet-container {
+  box-sizing: border-box;
+  width: 100% !important;
+  height: 100% !important;
+  min-height: calc(70vh - 100px);
+  /* Absolute fallback */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Ensure container is relative for absolute children */
+.fortune-sheet-container {
+  position: relative;
+}
+
+/* Force placeholder to take up space in the flex container */
+.fortune-sheet-canvas-placeholder {
+  flex: 1;
+  min-height: 0;
+  /* Crucial for nested flex containers */
+  width: 100% !important;
+}
+
+/* Layer canvas and overlay ensuring they don't collapse */
+.fortune-sheet-canvas,
+.fortune-sheet-overlay {
+  height: 100% !important;
+}

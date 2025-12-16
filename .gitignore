@@ -1,0 +1,4 @@
+node_modules
+dist/*
+!dist/assets/
+!dist/assets/index.js
